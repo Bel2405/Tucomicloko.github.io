@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu Comic Loko</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="./Logo.png">
+    </div>
+
+    <div class="profile">
+        <img src="./icon.png">
+    </div>
+</header>
+
+<!-- HOME -->
+<div id="home">
+
+    <div class="section">
+        <h2>COMICS</h2>
+
+        <!-- GRID 2 FILAS -->
+        <div class="grid">
+
+            <!-- 1 a 7 -->
+            <div class="card" onclick="abrirComic1()"><img src="./COMICS/1COMIC/Abuela.jpg"><div class="overlay">ABUELA</div></div>
+            <div class="card" onclick="abrirComic2()"><img src="./COMICS/2COMIC/Comic-portada1.jpg"><div class="overlay">COMAÑIA INESPERADA</div></div>
+            <div class="card" onclick="abrirComic3()"><img src="./COMICS/3COMIC/David1.jpg"><div class="overlay">3COMIC</div></div>
+            <div class="card" onclick="abrirComic4()"><img src="./COMICS/4COMIC/PAGINA 1.jpg"><div class="overlay">4COMIC</div></div>
+            <div class="card" onclick="abrirComic5()"><img src="./COMICS/5COMIC/PORTADA Emilio.jpg"><div class="overlay">5COMIC</div></div>
+            <div class="card" onclick="abrirComic6()"><img src="./COMICS/6COMIC/Gaby1.jpg"><div class="overlay">6COMIC</div></div>
+            <div class="card" onclick="abrirComic7()"><img src="./COMICS/7COMIC/La Ultima Migaja_AraiVazquez_Portada.jpg"><div class="overlay">7COMIC</div></div>
+
+            <!-- 8 a 14 -->
+            <div class="card" onclick="abrirComic8()"><img src="./COMICS/8COMIC/COMIC 1.jpg"><div class="overlay">8COMIC</div></div>
+            <div class="card" onclick="abrirComic9()"><img src="./COMICS/9COMIC/COMIC ELI_1.jpg"><div class="overlay">9COMIC</div></div>
+            <div class="card" onclick="abrirComic10()"><img src="./COMICS/10COMIC/Pag 1.jpg"><div class="overlay">10COMIC</div></div>
+            <div class="card" onclick="abrirComic11()"><img src="./COMICS/11COMIC/Comic Georgy 1.jpg"><div class="overlay">11COMIC</div></div>
+            <div class="card" onclick="abrirComic12()"><img src="./COMICS/12COMIC/1_joss.jpg"><div class="overlay">12COMIC</div></div>
+            <div class="card" onclick="abrirComic13()"><img src="./COMICS/13COMIC/LeonRugiente-1.jpg"><div class="overlay">13COMIC</div></div>
+            <div class="card" onclick="abrirComic14()"><img src="./COMICS/14COMIC/Laucomic1.jpg"><div class="overlay">14COMIC</div></div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ===== LECTORES (igual que antes) ===== -->
+
+<div class="lector" id="ventana1">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas1" src="./COMICS/1COMIC/Abuela.jpg">
+    <div class="controls">
+        <button id="anteriorBTN1" onclick="anteriorPagina1()" disabled>⬅</button>
+        <button id="siguienteBTN1" onclick="siguientePagina1()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana2">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas2" src="./COMICS/2COMIC/page1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN2" onclick="anteriorPagina2()" disabled>⬅</button>
+        <button id="siguienteBTN2" onclick="siguientePagina2()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana3">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas3" src="./COMICS/3COMIC/David1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN3" onclick="anteriorPagina3()" disabled>⬅</button>
+        <button id="siguienteBTN3" onclick="siguientePagina3()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana4">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas4" src="./COMICS/4COMIC/PAGINA 1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN4" onclick="anteriorPagina4()" disabled>⬅</button>
+        <button id="siguienteBTN4" onclick="siguientePagina4()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana5">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas5" src="./COMICS/5COMIC/PORTADA Emilio.jpg">
+    <div class="controls">
+        <button id="anteriorBTN5" onclick="anteriorPagina5()" disabled>⬅</button>
+        <button id="siguienteBTN5" onclick="siguientePagina5()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana6">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas6" src="./COMICS/6COMIC/Gaby1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN6" onclick="anteriorPagina6()" disabled>⬅</button>
+        <button id="siguienteBTN6" onclick="siguientePagina6()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana7">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas7" src="./COMICS/7COMIC/La Ultima Migaja_AraiVazquez_Portada.jpg">
+    <div class="controls">
+        <button id="anteriorBTN7" onclick="anteriorPagina7()" disabled>⬅</button>
+        <button id="siguienteBTN7" onclick="siguientePagina7()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana8">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas8" src="./COMICS/8COMIC/COMIC 1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN8" onclick="anteriorPagina8()" disabled>⬅</button>
+        <button id="siguienteBTN8" onclick="siguientePagina8()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana9">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas9" src="./COMICS/9COMIC/COMIC ELI_1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN9" onclick="anteriorPagina9()" disabled>⬅</button>
+        <button id="siguienteBTN9" onclick="siguientePagina9()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana10">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas10" src="./COMICS/10COMIC/Pag 1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN10" onclick="anteriorPagina10()" disabled>⬅</button>
+        <button id="siguienteBTN10" onclick="siguientePagina10()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana11">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas11" src="./COMICS/11COMIC/Comic Georgy 1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN11" onclick="anteriorPagina11()" disabled>⬅</button>
+        <button id="siguienteBTN11" onclick="siguientePagina11()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana12">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas12" src="./COMICS/12COMIC/1_joss.jpg">
+    <div class="controls">
+        <button id="anteriorBTN12" onclick="anteriorPagina12()" disabled>⬅</button>
+        <button id="siguienteBTN12" onclick="siguientePagina12()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana13">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas13" src="./COMICS/13COMIC/LeonRugiente-1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN13" onclick="anteriorPagina13()" disabled>⬅</button>
+        <button id="siguienteBTN13" onclick="siguientePagina13()">➡</button>
+    </div>
+</div>
+
+<div class="lector" id="ventana14">
+    <button onclick="cerrar()">⬅ 🏠︎</button>
+    <img id="paginas14" src="./COMICS/14COMIC/Laucomic1.jpg">
+    <div class="controls">
+        <button id="anteriorBTN14" onclick="anteriorPagina14()" disabled>⬅</button>
+        <button id="siguienteBTN14" onclick="siguientePagina14()">➡</button>
+    </div>
+</div>
+
+</body>
+</html>
